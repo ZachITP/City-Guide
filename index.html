@@ -14,90 +14,114 @@
   <body>
     <main>
       <section class="row">
-        <div class="card center">
-      <h2 class="title">TravelEase</h2>
-      <h6 class="title">all your travel needs in one place</h6>
-      <input type="text" id= content class="navigation-bar" placeholder="Destination"></input>
-      <!--CARD navigation bar-->
-      <input type="text" id= content class="navigation-bar" placeholder="Search destination by city"></input>
-      <!--CARD magnifying glass button icon-->
-      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.7em" 
-        width="1.7em" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" 
-        d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path>
-      </svg></button>
-    
+        <div class="card1 center">
+        <h2 class="title">TravelEase</h2>
+        <h6 class="title">all your travel needs in one place</h6>
       
-      
-    
-      
-      <!--datepicker-->
-      
+        <div class="navigation">
+            <!--CARD navigation bar-->
+            <input type="text" id= content class="navigation-bar" placeholder="Search by city">
+            <!--CARD magnifying glass button icon-->
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.7em" 
+            width="1.7em" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" 
+            d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path>
+            </svg></button>
+         </div>
+            
+
+      <!--Calendar 1: arrival date-->
       <div class="Calendar1">
+         <div class="row">
+                 <form>
+                     <div class="input-field">
+                         <input type="text" id="date" class="datepicker1">
+                         <label for="date">Arrival Date</label>
+                     </div>
+                 </form>
+         </div> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+      <Script>
+         const Calendar = document.querySelector('.datepicker1');
+         M.Datepicker.init(Calendar,{});
+      
+      //Calendar 2: departure date
+      </Script>
+      <div class="Calendar2">
         <div class="row">
-          <form>
-            <div class="input-field">
-              <input type="text" id="date" class="datepicker"></input>
-              <label for="date">Arrival Date</label>
-            </div>
-          </form>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-                        <script> 
-                          const Calendar = document.querySelector('.datepicker');
-                          M.Datepicker.init(Calendar,{});
-                           </script> 
-        </div>
-    </div> 
-    
-    
-    <!--Calendar 2: departure date-->
-    <div class="Calendar2">
-      <div class="row">
-        <form>
-          <div class="input-field">
-            <input type="text" id="date" class="datepicker">
-            <label for="date">Departure Date</label>
-          </div>
-        </form>
-      </div>
-    </div> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script>
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Departure Date</label>
+                    </div>
+                </form>
+        </div> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <Script>
         const Calendar2 = document.querySelector('.datepicker');
         M.Datepicker.init(Calendar2,{});
-      </script> 
+      </Script>
+       
+      
+    
         </div>
 </section>
 </main>
 
 <section class="hotel-api">
   <div class="card-panel btn-floating btn-larger" id="card-panel-hotel">
+
+    <div class= "name">name</div>
+    <div class="link">link</div>
+    <div class="rating">rating</div>
+   
+
+
   </div>
   
   
 </section>
 
 <section class="weather-api">
-  <div class="card-panel btn-floating btn-larger" id="card-panel-weather">
+ 
+    <div class="card2">
     
+          <!--current time-->
+          <p><span id="time"> </span></p>
+          <!--current weather-->
+          <h2 class="city"></h2>
+          <h1 class="temp"></h1>
+          <img src="" alt="" class="icon"/>
+          <div class= "description"></div>
+          <div class="humidity"></div>
+          <div class="wind"></div>
+          <h2 class="forcast"></h2>
+          <!--5 day forecast-->
+           <h5 class= "5 day forecast">Forecast</h5>
+              <div class= "day1"><img class="img1"><div class= "temp1"></div>
+              <div class="day2"><img class="img2"><div class= "temp2"></div>
+              <div class="day3"><img class="img3"><div class= "temp3"></div>
+              <div class="day4"><img class="img4"><div class= "temp4"></div>
+             
+             
   </div>
   
 </section>
 
-<section class="foods-api">
-  <div class="card-panel btn-floating btn-larger" id="card-panel-food">
+<section class="card3">
+  
+
+  </div>
+</section>
+
+<section class="card4">
+  
     
   </div>
 </section>
 
-
-
-
-
-
-
-
 <script type="text/javasscript" src="js/materialize.min.js"></script>
 <script src="./script.js"></script>
+<script src="./zach.js"></script>
 </body>   
 </html>

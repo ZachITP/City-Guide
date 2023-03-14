@@ -21,8 +21,19 @@ body {
 }
 
 /*card styling and color */
-.card {
-    background: #232121d0;
+.card1 {
+    background: #b8b2b2d0;
+    padding: 3em;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+    box-shadow: inset black;
+    font-style: italic;
+}
+
+.card2 {
+    background: #b8b2b2d0;
     padding: 3em;
     border-radius: 35px;
     width: 100%;
@@ -30,43 +41,44 @@ body {
     margin: 1em;
     box-shadow: inset black;
     font-style: italic;
+    margin-left: 20%;
+
+
+}
+
+.card3 {
+    background: #b8b2b2d0;
+    padding: 3em;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    box-shadow: inset black;
+    font-style: italic;
+    margin-left: 20%;
+
+
+}
+
+.card4 {
+    background: #b8b2b2d0;
+    padding: 3em;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    box-shadow: inset black;
+    font-style: italic;
+    margin-left: 20%;
 }
 
 
-/* search button */
-button {
-    border-radius: 50%;
-    border: none;
-    height: 46px;
-    width: 46px;
-    outline: none;
-    background: #7c7c7c2b;
-    color: black;
-    transition: 0.3s ease-in-out;
-}
 
 
-/*search button hover */
-button:hover {
-background:#7c7c7c6b
-}
 
-/*datepicker date hover styling */
-button, input, optgroup, select, textarea {
-     font-family: sans-serif; 
-     font-size: 100%; 
-    line-height: 1.2; 
-     margin: 0.9; 
-}
-/* Date picker background color */
-.datepicker-date-display { 
-    -ms-flex: 1 auto;
-    flex: 1 auto;
-    background-color: #7c7c7c6b;
-    color: black;
-    padding: 20px 22px;
-    font-weight: 500;
-}
+
+
+
 /*date picker year color */
 .datepicker-date-display .year-text {
     display: block;
@@ -83,13 +95,7 @@ button, input, optgroup, select, textarea {
    
 }
 
-.waves-effect {
-     cursor: pointer; 
-    transition: .3s ease-out;
-    position:relative;
-    overflow: visible;
-   
-}
+
 
 #card-panel-hotel {
     display: flex;
@@ -136,3 +142,131 @@ button, input, optgroup, select, textarea {
      background-image: url('https://source.unsplash.com/700x400/?food');
 }
 
+/* search bar position */
+.navigation {
+    display: flex;
+    
+
+
+}
+
+/* seach bar styling */
+input.navigation-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+}
+
+/* search button */
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+
+/*search button hover */
+button:hover {
+background:#7c7c7c6b
+}
+/*smaller card on initial page*/
+.weather.loading {
+  visibility:hidden;  
+  max-height:20px;
+  position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    color: black;
+    position: absolute;
+    top: 0,
+}
+/*recent search button*/
+.dropbtn {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 46px;
+  width: 46px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: black;
+  transition: 0.3s ease-in-out;
+  }
+  /* recent search hover*/
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:#7c7c7c6b ;
+  }
+  /*recent searches search bar */
+  #myInput {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    background: #7c7c7c2b;
+    color: black;
+    font-family: inherit;
+    font-size: 100%;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #eaeaead0;
+    padding: 1em;
+    border-radius: 20px;
+    max-width: 320px;
+    margin: 1em;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  .day1 {
+    display: flex;
+    align-items: center;
+  }
+  .day2 {
+    display: flex;
+    align-items: center;
+  }
+  .day3 {
+    display: flex;
+    align-items: center;
+  }
+  .day4 {
+    display: flex;
+    align-items: center;
+  }
+  .day5 {
+    display: flex;
+    align-items: center;
+   
+  }
