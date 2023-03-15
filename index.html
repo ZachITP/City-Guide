@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-
-    
     <link rel="stylesheet" href="./style.css">
-    <title>City Guide</title>
+    <title>TravelEase</title>
   </head>
+
+  
+
   <body>
     <main>
       <section class="row">
         <div class="card1 center">
         <h2 class="title">TravelEase</h2>
         <h6 class="title">all your travel needs in one place</h6>
-      
+      <!--current time-->
+      <p><span id="time"> </span></p>
         <div class="navigation">
             <!--CARD navigation bar-->
             <input type="text" id= content class="navigation-bar" placeholder="Search by city">
@@ -61,33 +63,15 @@
         const Calendar2 = document.querySelector('.datepicker');
         M.Datepicker.init(Calendar2,{});
       </Script>
-       
-      
-    
     </div>
 </section>
 </main>
 
-<section class="card1">
-  <div class="card-panel btn-floating btn-larger" id="card-panel-hotel">
 
-    <div id= "name">name</div>
-    <div id="deeplink">link</div>
-    <div id="rating">rating</div>
-   
-
-
-  </div>
-  
-  
-</section>
-
-<section class="weather-api">
- 
-    <div class="card2">
+      <!--Display weather-->
+      <section class="weather-api">
+        <div class="card2">
     
-          <!--current time-->
-          <p><span id="time"> </span></p>
           <!--current weather-->
           <h2 class="city"></h2>
           <h1 class="temp"></h1>
@@ -102,23 +86,16 @@
               <div class="day2"><img class="img2"><div class= "temp2"></div>
               <div class="day3"><img class="img3"><div class= "temp3"></div>
               <div class="day4"><img class="img4"><div class= "temp4"></div>
-             
-             
-  </div>
+         </div>
   
-</section>
-
+      </section>
+      
+<!--card displaying Hotel info-->
 <section class="card3">
-  <div class= "name">name</div>
-    <div class="deeplink">link</div>
-    <div class="rating">rating</div>
-
-  </div>
-</section>
-
-<section class="card4">
-  
-    
+  <h3>Hotels</h3>
+  <div class= "name"></div>
+    <div class="deeplink"></div>
+    <div class="rating"></div>
   </div>
 </section>
 

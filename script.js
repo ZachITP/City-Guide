@@ -18,11 +18,6 @@ function refreshTime() {
   //clock milliseconds refresh rate 
     setInterval(refreshTime, 1000);
 
-
-
-
-    
-  
   let weather = {
       //OpenWeatherMap api current weather, forecast
       "apiKey": "53308346e662bc908243590c79903419",
@@ -41,8 +36,7 @@ function refreshTime() {
           .then(fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=`+lat+`&lon=`+lon+`&units=imperial&appid=`+this.apiKey)
           .then((response) => response.json())
           .then((data) => this.showForecast(data)))
-         
-      
+          
           
       },
        //weather data
@@ -123,13 +117,3 @@ function refreshTime() {
   });
   
   });
-  
-  
-
-
-
-  
-
-  
-  
-  

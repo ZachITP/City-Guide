@@ -1,200 +1,179 @@
 body {
-    /*body styling */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height:auto;
-     margin: 0;
-     font-family: 'Open Sans', sans-serif;
-     background: #222;
-     /* background image source */
-     background-image: url('https://source.unsplash.com/1600x900/?city');
- 
-   /* Center and scale the background image */
-   background-position: auto;
-   background-repeat: no-repeat;
-   background-size: cover;
+  /*body styling */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:auto;
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   background: #222;
+   /* background image source */
+   background-image: url('https://source.unsplash.com/1600x900/?city');
+
+ /* Center and scale the background image */
+ background-position: auto;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .title {
-    color: white;
+  color: black;
 }
 
 /*card styling and color */
 .card1 {
-    background: #b8b2b2d0;
-    padding: 3em;
-    border-radius: 35px;
-    width: 100%;
-    max-width: 500px;
-    margin: 1em;
-    box-shadow: inset black;
-    font-style: italic;
+  background: #b8b2b2d0;
+  padding: 3em;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1em;
+  box-shadow: inset black;
+  font-style: italic;
+  margin-right: 10%;
 }
 
 .card2 {
-    background: #b8b2b2d0;
-    padding: 3em;
-    border-radius: 35px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
-    box-shadow: inset black;
-    font-style: italic;
-    margin-left: 20%;
+  background: #b8b2b2d0;
+  padding: 3em;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: inset black;
+  font-style: italic;
+  margin-left: 20%;
 
 
 }
 
 .card3 {
-    background: #b8b2b2d0;
-    padding: 3em;
-    border-radius: 35px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
-    box-shadow: inset black;
-    font-style: italic;
-    margin-left: 20%;
+  background: #b8b2b2d0;
+  padding: 3em;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: inset black;
+  font-style: italic;
+  margin-left: 7%;
 
 
 }
 
 .card4 {
-    background: #b8b2b2d0;
-    padding: 3em;
-    border-radius: 35px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
-    box-shadow: inset black;
-    font-style: italic;
-    margin-left: 20%;
+  background: #b8b2b2d0;
+  padding: 3em;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: inset black;
+  font-style: italic;
+  margin-left: 20%;
 }
 
+/*datepicker date hover styling */
+button, input, optgroup, select, textarea {
+font-family: sans-serif; 
+font-size: 100%; 
+line-height: 1.15; 
+margin: 0; 
+}
 
-
-
-
-
-
-
+.datepicker-date-display { 
+-ms-flex: 1 auto;
+flex: 1 auto;
+background-color: #7c7c7c6b;
+color: black;
+padding: 20px 22px;
+font-weight: 500;
+}
 /*date picker year color */
 .datepicker-date-display .year-text {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 25px;
-    color: black
+display: block;
+font-size: 1.5rem;
+line-height: 25px;
+color: black
 }
 
 .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
-    color: black; 
-    padding: 0.3rem;
-    margin-right: 20px;
-    
-   
+  color: black; 
+  padding: 0.3rem;
+  margin-right: 20px;
+  
+ 
 }
 
 
 
 #card-panel-hotel {
-    display: flex;
-    box-sizing:border-box;
-    position: absolute;
-     height: 30vh;
-     margin-top:-8%;
-     margin-left: -55%;
-     border-radius: 50%;
-     padding-left: 500px;
-     font-family: 'Open Sans', sans-serif;
-     background: #222;
-     background-position: center;
-    background-image: url('https://source.unsplash.com/700x400/?hotel');   
+  display: flex;
+  box-sizing:border-box;
+  position: absolute;
+   height: 30vh;
+   margin-top:-8%;
+   margin-left: -55%;
+   border-radius: 50%;
+   padding-left: 500px;
+   font-family: 'Open Sans', sans-serif;
+   background: #222;
+   background-position: center;
+  background-image: url('https://source.unsplash.com/700x400/?hotel');   
 }
 
 #card-panel-weather {
-    display: flex;
-    box-sizing:border-box;
-    position: absolute;
-     height: 30vh;
-     margin-top:-8%;
-     margin-left:4%;
-     border-radius: 50%;
-     padding-left: 500px;
-     font-family: 'Open Sans', sans-serif;
-     background: #222;
-     background-position: center;
-     background-image: url('https://source.unsplash.com/700x400/?rainstorm');
+  display: flex;
+  box-sizing:border-box;
+  position: absolute;
+   height: 30vh;
+   margin-top:-8%;
+   margin-left:4%;
+   border-radius: 50%;
+   padding-left: 500px;
+   font-family: 'Open Sans', sans-serif;
+   background: #222;
+   background-position: center;
+   background-image: url('https://source.unsplash.com/700x400/?rainstorm');
 }
 
 #card-panel-food {
-    display: flex;
-    box-sizing:border-box;
-    position: absolute;
-     height: 30vh;
-     margin-top:18%;
-     margin-left:-25%;
-     border-radius: 50%;
-     padding-left: 500px;
-     font-family: 'Open Sans', sans-serif;
-     background: #222;
-     background-position: center;
-     background-image: url('https://source.unsplash.com/700x400/?food');
+  display: flex;
+  box-sizing:border-box;
+  position: absolute;
+   height: 30vh;
+   margin-top:18%;
+   margin-left:-25%;
+   border-radius: 50%;
+   padding-left: 500px;
+   font-family: 'Open Sans', sans-serif;
+   background: #222;
+   background-position: center;
+   background-image: url('https://source.unsplash.com/700x400/?food');
 }
 
 /* search bar position */
 .navigation {
-    display: flex;
-    
+  display: flex;
+  
 
 
 }
 
 /* seach bar styling */
 input.navigation-bar {
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: black;
-    font-family: inherit;
-    font-size: 120%;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 24px;
+  background: black;
+  color: black;
+  font-family: inherit;
+  font-size: 120%;
 }
 
 /* search button */
 button {
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 46px;
-    width: 46px;
-    outline: none;
-    background: #7c7c7c2b;
-    color: black;
-    transition: 0.3s ease-in-out;
-}
-
-
-/*search button hover */
-button:hover {
-background:#7c7c7c6b
-}
-/*smaller card on initial page*/
-.weather.loading {
-  visibility:hidden;  
-  max-height:20px;
-  position: relative;
-}
-
-.weather.loading:after {
-    visibility: visible;
-    color: black;
-    position: absolute;
-    top: 0,
-}
-/*recent search button*/
-.dropbtn {
   margin: 0.5em;
   border-radius: 50%;
   border: none;
@@ -204,69 +183,100 @@ background:#7c7c7c6b
   background: #7c7c7c2b;
   color: black;
   transition: 0.3s ease-in-out;
-  }
-  /* recent search hover*/
-  .dropbtn:hover, .dropbtn:focus {
-    background-color:#7c7c7c6b ;
-  }
-  /*recent searches search bar */
-  #myInput {
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    background: #7c7c7c2b;
-    color: black;
-    font-family: inherit;
-    font-size: 100%;
-  }
-  
-  #myInput:focus {outline: 3px solid #ddd;}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background: #eaeaead0;
-    padding: 1em;
-    border-radius: 20px;
-    max-width: 320px;
-    margin: 1em;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
+}
 
-  .day1 {
-    display: flex;
-    align-items: center;
-  }
-  .day2 {
-    display: flex;
-    align-items: center;
-  }
-  .day3 {
-    display: flex;
-    align-items: center;
-  }
-  .day4 {
-    display: flex;
-    align-items: center;
-  }
-  .day5 {
-    display: flex;
-    align-items: center;
-   
-  }
+
+/*search button hover */
+button:hover {
+background:#7c7c7c6b
+}
+/*smaller card on initial page*/
+.weather.loading {
+visibility:hidden;  
+max-height:20px;
+position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  color: black;
+  position: absolute;
+  top: 0,
+}
+/*recent search button*/
+.dropbtn {
+margin: 0.5em;
+border-radius: 50%;
+border: none;
+height: 46px;
+width: 46px;
+outline: none;
+background: #7c7c7c2b;
+color: black;
+transition: 0.3s ease-in-out;
+}
+/* recent search hover*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#7c7c7c6b ;
+}
+/*recent searches search bar */
+#myInput {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  background: #7c7c7c2b;
+  color: black;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #eaeaead0;
+  padding: 1em;
+  border-radius: 20px;
+  max-width: 320px;
+  margin: 1em;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.day1 {
+  display: flex;
+  align-items: center;
+}
+.day2 {
+  display: flex;
+  align-items: center;
+}
+.day3 {
+  display: flex;
+  align-items: center;
+}
+.day4 {
+  display: flex;
+  align-items: center;
+}
+.day5 {
+  display: flex;
+  align-items: center;
+ 
+}
