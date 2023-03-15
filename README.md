@@ -11,6 +11,7 @@ The tools we used were javascript, HTML, a CSS framework (Materialize), and two 
 
 As life goes we ran into many challenges while working as a group to complete this project. For example, we encountered numerous merge conflicts which taught us to communicate and prioritze sections of code to implement them effective.
 
+Deployed application: https://zachitp.github.io/City-Guide/
 
 ![Alt text](./travelease.gif)
 
