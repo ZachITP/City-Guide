@@ -1,47 +1,70 @@
+let city = "Austin"
+
+const optionsA = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'e22f94d494msh38033a92e3d0750p1548a6jsn35a14fbbd1d8',
+		'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
+	}
+};
+//(console.log(city))
+fetch('https://airbnb13.p.rapidapi.com/search-location?location=' + city + '&checkin=2023-04-15&checkout=2023-04-20&adults=1&children=0&infants=0&page=1&currency=USD', optionsA)
+	.then(response => response.json())
+	.then(response => console.log(response))
+    .then (console.log(city))
+          
+          .then((response) => this.showmyHotels(response))
+         
+          //const { icon, description } = data.weather[0];
+
+         function showmyHotels(response) {
+            const {response_time}= response.headers;
+            const {deeplink}= response.deeplink[0];
+            const {Airb}= results(0).name;
+            const {rating}= results(0).rating;
+            //Query all the weather data and pass it to the app
+        document.querySelector("#deeplink").innerText = deeplink;
+        document.querySelector("#name").innerText = Airb;
+        document.querySelector("#rating").innerText = rating;
+
+         }
+        
+       
+        
+      
 
 
-let myCityID = ""
-let myHotel = ""
 
-const axios = require("axios");
+async function getshowmyHotels(){
+
+    await fetch('https://airbnb13.p.rapidapi.com/search-location?location=' + city + '&checkin=2023-04-15&checkout=2023-04-20&adults=1&children=0&infants=0&page=1&currency=USD', optionsA,{
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'e22f94d494msh38033a92e3d0750p1548a6jsn35a14fbbd1d8',
+            'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
+        }
+
+    })
+    .then(response => response.json())
+    .then(response => {
+        console.log("COVID 19 API object:");
+        console.log(response);
+        console.log("\n");
+
+        const deeplink= response.results[0].deeplink;
+            const Airb= response.results[0].name;
+            const rating= response.results[0].rating;
+            //Query all the weather data and pass it to the app
+        document.querySelector('deeplink').innerHTML = deeplink;
+        document.querySelector('name').innerText = Airb;
+        document.querySelector('rating').innerText = rating;
+         // add all countries to select element
+         //response.response.forEach(c => {
+            //const option = document.createElement('option');
+           // option.innerHTML = c.country;
+            //document.getElementById('#deeplink').appendChild(option);
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-//const options = {
-//	method: 'GET',
-//	headers: {
-	//	'X-RapidAPI-Key': '341879f333msh7944b28a1de46b5p153fd3jsn7851a3a193d5',
-		///'X-RapidAPI-Host': 'priceline-com.p.rapidapi.com'
-	//}
-//};
-
-//fetch('https://priceline-com.p.rapidapi.com/hotels/city/search?q=Houston', options)
-	//.then(response => response.json())
-	//.then(response => console.log(response))
-    //console.log()
-	
-
-
-    //.then((response) => response.json())
-    //  .then(myCityID= data.cityID)
-             
-        //  console.log (data.cityID) 
-         // .then (fetch('https://priceline-com.p.rapidapi.com/hotels/' + myCityID + '?checkin_date=2023-07-13&checkout_date=2023-07-15&rooms=1&offset=0&currency=USD', options)
-         // .then((response) => response.json())
-         // .then((data) => this.showmyHotels(data)))
-
-         // showmyHotels: function(data) {
-        //    const myHtoel1= data.hotels.list[0].name
-        //    const myHotel2= data.hotels.list[1].name
-         //   const myHotel3= data.hotels.list[2].name
-          //}
+}
+getshowmyHotels();
