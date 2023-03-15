@@ -4,7 +4,7 @@ let lon = 0
 //event listener for calendar
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, options);
+    var instances = M.Datepicker.init(elems);
   });
   
 
@@ -100,7 +100,7 @@ function refreshTime() {
       navigation: function () {
       this.pullWeather(document.querySelector(".navigation-bar").value);
      this.savecity(document.querySelector(".navigation-bar").value);
-     this.displayCities();
+     
       }
    
   };
@@ -123,36 +123,10 @@ function refreshTime() {
   });
   
   });
-  const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'e22f94d494msh38033a92e3d0750p1548a6jsn35a14fbbd1d8',
-		'X-RapidAPI-Host': 'best-booking-com-hotel.p.rapidapi.com'
-	}
-};
-
-fetch('https://best-booking-com-hotel.p.rapidapi.com/booking/best-accommodation?cityName=Berlin&countryName=Germany', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-    localStorage.setItem('data', JSON.stringify(data));
+  
+  
 
 
-   function showHotels(data) {
-    const  link = data.list; 
-    const rating= data.list;
-    const name= data.list;
-   
-//Query all the weather data and pass it to the app
-document.querySelector(".link").textContent= 
-document.querySelector(".rating").innerText =  
-document.querySelector(".name").innerText
-
-   }
-   
-
-  //display search history 
-  weather.displayCities();
 
   
 
